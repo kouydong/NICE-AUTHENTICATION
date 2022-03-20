@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:object="${niceDto}">
+        <div> 복호화시간 : <span th:text="*{decoTime}"></span></div>
+        <div> 결과코드 : <span th:text="*{retuCode}"></span></div>
+        <div> 결과메시지 : <span th:text="*{mess}"></span></div>
+        <div> 요청번호 : <span th:text="*{requNumb}"></span></div>
+        <div> 인증고유번호 : <span th:text="*{respNumb}"></span></div>
+        <div> 인증수단 : <span th:text="*{authType}"></span></div>
+        <div> 성명 : <span th:text="*{name}"></span></div>
+        <div> 생년월일 : <span th:text="*{birtDate}"></span></div>
+        <div> 성별 : <span th:text="*{gend}"></span></div>
+        <div> 내/외국인정보 : <span th:text="*{natiInfo}"></span></div>
+        <div> 중복가입확인값 : <span th:text="*{duplInfo}"></span></div>
+        <div> 연계정보확인값 : <span th:text="*{connInfo}"></span></div>
+        <div> 휴대폰번호 : <span th:text="*{mobiNo}"></span></div>
+        <div> 통신사 : <span th:text="*{mobiCo}"></span></div>
+    </div>
+</body>
+</html>
